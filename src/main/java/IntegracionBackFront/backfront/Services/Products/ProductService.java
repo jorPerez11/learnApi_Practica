@@ -56,6 +56,7 @@ public class ProductService {
         productoExistente.setFechaIngreso(json.getFechaIngreso());
         productoExistente.setCategoriaId(json.getCategoriaId());
         productoExistente.setUsuarioId(json.getUsuarioId());
+        productoExistente.setImagenUrl(json.getImagenUrl());
         //3. Actualización del registro
         ProductEntity productoActualizado = repo.save(productoExistente);
         //4. Convertir a DTO
@@ -83,6 +84,7 @@ public class ProductService {
         dto.setFechaIngreso(objEntity.getFechaIngreso());
         dto.setCategoriaId(objEntity.getCategoriaId());
         dto.setUsuarioId(objEntity.getUsuarioId());
+        dto.setImagenUrl(objEntity.getImagenUrl());
         return dto;
     }
 
@@ -95,6 +97,7 @@ public class ProductService {
         entity.setFechaIngreso(json.getFechaIngreso());
         entity.setCategoriaId(json.getCategoriaId());
         entity.setUsuarioId(json.getUsuarioId());
+        entity.setImagenUrl(json.getImagenUrl());
         return entity;
     }
 }
