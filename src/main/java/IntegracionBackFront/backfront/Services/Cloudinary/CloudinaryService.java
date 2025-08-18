@@ -58,7 +58,7 @@ public class CloudinaryService {
      * @return URL segura (HTTP) de la imagen subida
      * @throws IOException Si ocurre un error durante la subida
      */
-    public String uploadImage(MultipartFile file, String folder) throws IOException{
+    public String uploadImageFolder(MultipartFile file, String folder) throws IOException{
         //Validación de archivo
         validateImage(file);
 
