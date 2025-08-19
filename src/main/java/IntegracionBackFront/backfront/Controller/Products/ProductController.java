@@ -48,7 +48,7 @@ public class ProductController {
     }
 
     @PostMapping("/newProduct")
-    private ResponseEntity<Map<String, Object>> inserCategory(@Valid @RequestBody ProductDTO json, HttpServletRequest request){
+    private ResponseEntity<Map<String, Object>> insertCategory(@Valid @RequestBody ProductDTO json, HttpServletRequest request){
         try{
             ProductDTO response =service.insert(json);
             if (response == null){
